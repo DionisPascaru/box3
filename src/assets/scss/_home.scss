@@ -1,0 +1,34 @@
+.home-view {
+  height: calc(100vh - 96px);
+  min-height: 700px;
+  background-image: url("@/assets/images/home-banner-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include for-md {
+    background-image: url("@/assets/images/home-banner.png");
+    background-position: center;
+  }
+}
+
+.relative-block {
+  position: relative;
+  height: 100%;
+}
+
+.position-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  @include for-md {
+    display: block;
+    top: unset;
+    bottom: 80px;
+  }
+}
