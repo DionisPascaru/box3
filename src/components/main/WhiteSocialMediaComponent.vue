@@ -1,5 +1,5 @@
 <template>
-    <div class="social-media-block">
+    <div class="black social-media-block">
         <h3>+373 79 793 793</h3>
         <div class="social-media-items">
             <div class="social-media-item">

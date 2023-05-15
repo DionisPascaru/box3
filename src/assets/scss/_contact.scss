@@ -1,4 +1,6 @@
 .contact-block {
+  margin: 50px 0;
+
   .schedule {
     display: flex;
     flex-direction: column;
@@ -70,6 +72,32 @@
           color: $white-color;
           font-size: 24px;
         }
+      }
+    }
+  }
+}
+
+.black.schedule {
+  h3 {
+    color: $black-color;
+  }
+
+  .schedule-item {
+    span {
+      color: $black-color;
+    }
+  }
+}
+
+.black.social-media-block {
+  h3 {
+    color: $black-color;
+  }
+
+  .social-media-items {
+    .social-media-item {
+      i {
+        color: $black-color;
       }
     }
   }
