@@ -77,27 +77,29 @@
   }
 }
 
-.black.schedule {
-  h3 {
-    color: $black-color;
-  }
-
-  .schedule-item {
-    span {
+.black {
+  .schedule {
+    h3 {
       color: $black-color;
     }
-  }
-}
 
-.black.social-media-block {
-  h3 {
-    color: $black-color;
-  }
-
-  .social-media-items {
-    .social-media-item {
-      i {
+    .schedule-item {
+      span {
         color: $black-color;
+      }
+    }
+  }
+
+  .social-media-block {
+    h3 {
+      color: $black-color;
+    }
+
+    .social-media-items {
+      .social-media-item {
+        i {
+          color: $black-color;
+        }
       }
     }
   }
