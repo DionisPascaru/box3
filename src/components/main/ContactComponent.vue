@@ -3,7 +3,7 @@
         <div class="container">
             <el-row>
                 <el-col :span="24" :sm="12">
-                    <div class="black schedule">
+                    <div class="schedule">
                         <h3>График работы</h3>
                         <div class="schedule-item">
                             <span>Понедельник / Пятница</span>

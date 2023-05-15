@@ -1,6 +1,6 @@
 <template>
     <div>
-        <contact-component></contact-component>
+        <contact-component class="black"></contact-component>
     </div>
 </template>
 
