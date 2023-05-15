@@ -1,9 +1,15 @@
 <template>
-    <h1>Contact</h1>
+    <div>
+        <contact-component></contact-component>
+    </div>
 </template>
 
 <script>
+import ContactComponent from "@/components/main/ContactComponent.vue";
 export default {
-    name: 'ContactView'
+    name: 'ContactView',
+    components: {
+        ContactComponent
+    }
 }
 </script>

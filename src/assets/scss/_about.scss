@@ -1,0 +1,31 @@
+.about {
+  .banner-full {
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    @include for-sm {
+      height: auto;
+    }
+
+    img {
+      width: auto;
+      height: 100%;
+
+      @include for-sm {
+        width: 100%;
+      }
+    }
+  }
+
+  p {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    max-width: 700px;
+    text-align: center;
+    font-size: 24px;
+    border-bottom: 1px solid $black-color;
+  }
+}

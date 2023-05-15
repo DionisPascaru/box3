@@ -42,13 +42,13 @@
             </div>
             <div class="nav-menu-mobile" :class="{active: this.isActive}">
                 <ul>
-                    <li class="menu-item" :class="{'active': activeTab('ServicesView')}">
+                    <li class="menu-item" :class="{'active': activeTab('ServicesView')}" @click="this.collapseMenu">
                         <router-link :to="{name: 'ServicesView'}">услуги</router-link>
                     </li>
-                    <li class="menu-item" :class="{'active': activeTab('ContactView')}">
+                    <li class="menu-item" :class="{'active': activeTab('ContactView')}" @click="this.collapseMenu">
                         <router-link :to="{name: 'ContactView'}">контакты</router-link>
                     </li>
-                    <li class="menu-item" :class="{'active': activeTab('AboutView')}">
+                    <li class="menu-item" :class="{'active': activeTab('AboutView')}" @click="this.collapseMenu">
                         <router-link :to="{name: 'AboutView'}">о нас</router-link>
                     </li>
                 </ul>

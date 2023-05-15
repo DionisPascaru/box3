@@ -10,6 +10,11 @@ body {
   align-items: center;
 }
 
+.window-height {
+  height: calc(100vh - 96px);
+  min-height: 700px;
+}
+
 /** ----- containers ----- **/
 .container {
   margin: auto;

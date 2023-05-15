@@ -1,6 +1,6 @@
 <template>
-    <div class="home-view shadow-bottom">
-        <contact-component></contact-component>
+    <div class="home-view shadow-bottom window-height">
+        <contact-component class="position-bottom"></contact-component>
     </div>
 </template>
 
