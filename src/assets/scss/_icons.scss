@@ -7,3 +7,29 @@
 .icon-icon:before {
   content: "\e902";
 }
+
+// custom icons
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+
+  @include for-lg {
+    flex-wrap: nowrap;
+  }
+
+  .icon {
+    width: calc(20% - 30px);
+
+    @include for-md {
+      width: auto;
+      max-width: 100px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.social-media-block {
+  margin: auto;
+  text-align: center;
+
+  @include for-md {
+    margin-left: auto;
+    margin-right: unset;
+  }
+
+  h3 {
+    color: $white-color;
+    font-size: 30px;
+    margin: 20px 0;
+
+    @include for-md {
+      font-size: 80px;
+    }
+  }
+
+  h4 {
+    color: $white-color;
+    font-size: 20px;
+
+    @include for-md {
+      font-size: 50px;
+    }
+  }
+
+  .social-media-items {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    .social-media-item {
+      a {
+        text-decoration: none;
+      }
+
+      i {
+        color: $white-color;
+        font-size: 35px;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.94 34.53">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g id="facebook-app-symbol">
+      <path id="f" class="cls-1" d="m11.64,34.53v-15.75h5.28l.79-6.14h-6.08v-3.92c0-1.78.49-2.99,3.04-2.99h3.25V.24C16.36.08,14.78,0,13.2,0,8.51,0,5.3,2.86,5.3,8.11v4.53H0v6.14h5.3v15.75h6.34Z"/>
+    </g>
+  </g>
+</svg>
