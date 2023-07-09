@@ -1,22 +1,45 @@
 body {
   margin: 0;
+  background-color: $black-color;
 }
 
-.d-flex {
-  display: flex;
+h2, h3, h4 {
+  margin: 0;
+  font-weight: 100;
 }
 
-.align-items-center {
-  align-items: center;
+.border-top {
+  border-top: 2px solid $red-color;
 }
 
-.window-height {
-  height: calc(100vh - 96px);
-  min-height: 700px;
+.border-bottom {
+  border-bottom: 2px solid $red-color;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.btn {
+  margin: 30px auto;
+  border: 2px solid $white-color;
+  background-color: $black-color;
+  padding: 10px 30px;
+  border-radius: 40px;
+  color: $white-color;
+  opacity: 0.8;
+  font-size: 20px;
+  width: fit-content;
+  text-decoration: none;
+
+  @include for-md {
+    font-size: 38px;
+  }
 }
 
 /** ----- containers ----- **/
 .container {
+  width: calc(100% - 30px);
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -41,13 +64,5 @@ body {
 
   @include for-xl {
     max-width: 1140px;
-  }
-}
-
-.shadow-bottom {
-  box-shadow: inset 0 -200px 150px -50px $black-color;
-
-  @include for-md {
-    box-shadow: inset 0 -400px 300px -100px $black-color;
   }
 }
