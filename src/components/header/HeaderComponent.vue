@@ -7,10 +7,10 @@
                class="navigation-bar-menu"
                @select="handleSelect"
                background-color="transparent">
-        <el-menu-item index="1" @click="goToSection('aboutId', 100)">о нас</el-menu-item>
-        <el-menu-item index="2" @click="goToSection('serviceId', 100)">услуги</el-menu-item>
-        <el-menu-item index="3" @click="goToSection('contactId', 100)">контакты</el-menu-item>
-        <el-menu-item index="4" @click="goToSection('announcementId', 100)">вакансий</el-menu-item>
+        <el-menu-item index="1" @click="goToSection('aboutId')">о нас</el-menu-item>
+        <el-menu-item index="2" @click="goToSection('serviceId')">услуги</el-menu-item>
+        <el-menu-item index="3" @click="goToSection('contactId')">контакты</el-menu-item>
+        <el-menu-item index="4" @click="goToSection('announcementId')">вакансий</el-menu-item>
       </el-menu>
     </div>
 
@@ -73,7 +73,7 @@ export default {
       } else {
         const top = document.getElementById(value).offsetTop;
         window.scrollTo({
-          top: top - height,
+          top: (top + 700) - height,
           left: 0,
           behavior: 'smooth'
         });

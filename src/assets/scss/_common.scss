@@ -1,6 +1,10 @@
 body {
   margin: 0;
-  background-color: $black-color;
+  background-image: url("@/assets/images/background.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 h2, h3, h4 {
@@ -34,6 +38,32 @@ h2, h3, h4 {
 
   @include for-md {
     font-size: 38px;
+  }
+}
+
+.logo {
+  display: flex;
+  padding: 100px 0 0;
+
+  img {
+    width: 200px;
+    margin: auto;
+  }
+}
+
+.blur-bg {
+  backdrop-filter: blur(30px);
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: rgba(000, 000, 000, 0.5);
   }
 }
 

@@ -1,14 +1,5 @@
 <template>
   <div class="about">
-    <div class="parallax-image">
-      <div class="logo">
-        <img src="@/assets/logo.svg">
-      </div>
-      <div class="parallax-image-static">
-        <!--          <div class="parallax-shadow-wrapper"></div>-->
-        <img src="@/assets/images/2.2.png">
-      </div>
-    </div>
     <div class="container">
       <div class="section">
         <h2>добро пожаловать</h2>
