@@ -21,7 +21,7 @@
   }
 
   @include for-md {
-    background-color: $black-color;
+    background-color: rgba($black-color, 0.7);
   }
 
   .navigation-bar-menu {
@@ -52,7 +52,7 @@
 
 .navigation-bar-mobile {
   min-height: 41px;
-  background-color: $black-color;
+  background-color: rgba($black-color, 0.7);
   height: 0;
   transition: height .5s ease-in-out;
   position: fixed;

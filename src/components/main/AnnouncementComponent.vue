@@ -1,6 +1,6 @@
 <template>
   <div class="section">
-    <div class="announcement-parallax">
+    <div class="announcement-bg">
       <div class="announcement">
         <div class="container move-bottom">
           <h2>Ты нам нужен!</h2>
