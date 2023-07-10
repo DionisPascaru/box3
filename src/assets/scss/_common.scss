@@ -7,17 +7,83 @@ body {
   background-repeat: no-repeat;
 }
 
+h2 {
+  font-size: 30px;
+  color: $white-color;
+  text-align: center;
+
+  @include for-md {
+    font-size: 40px;
+  };
+}
+
+h3 {
+  color: $white-color;
+  font-size: 20px;
+  text-align: center;
+
+  @include for-md {
+    font-size: 25px;
+  };
+}
+
+h4 {
+  color: $white-color;
+  font-size: 16px;
+  text-align: center;
+
+  @include for-md {
+    font-size: 20px;
+  };
+}
+
+p {
+  font-size: 16px;
+  color: $white-color;
+  text-align: center;
+  opacity: 0.8;
+  font-weight: 100;
+
+  @include for-md {
+    font-size: 20px;
+  };
+}
+
 h2, h3, h4 {
   margin: 0;
-  font-weight: 100;
+  font-weight: 600;
 }
 
 .border-top {
-  border-top: 2px solid $red-color;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    max-width: 500px;
+    height: 2px;
+    background-color: $red-color;
+    margin: auto;
+  }
 }
 
 .border-bottom {
-  border-bottom: 2px solid $red-color;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    max-width: 500px;
+    height: 2px;
+    background-color: $red-color;
+    margin: auto;
+  }
 }
 
 .section {
@@ -27,7 +93,7 @@ h2, h3, h4 {
 .btn {
   margin: 30px auto;
   border: 2px solid $white-color;
-  background-color: $black-color;
+  background-color: transparent;
   padding: 10px 30px;
   border-radius: 40px;
   color: $white-color;
@@ -37,7 +103,7 @@ h2, h3, h4 {
   text-decoration: none;
 
   @include for-md {
-    font-size: 38px;
+    font-size: 30px;
   }
 }
 
@@ -67,6 +133,59 @@ h2, h3, h4 {
   }
 }
 
+.intro {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $black-color;
+
+  .intro-lottie {
+      width: 200px;
+      height: 200px;
+  }
+}
+
+.mobile-phone {
+  position: fixed;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 100px;
+  display: flex;
+  z-index: 999;
+  justify-content: center;
+}
+
+
+.square {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  border: 20px solid $red-color;
+  position: fixed;
+  top: 200px;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  z-index: -1;
+
+  @include for-sm {
+    width: 400px;
+    height: 400px;
+  }
+
+  @include for-md {
+    width: 450px;
+    height: 450px;
+  }
+
+  @include for-lg {
+    width: 500px;
+    height: 500px;
+  }
+}
 /** ----- containers ----- **/
 .container {
   width: calc(100% - 30px);

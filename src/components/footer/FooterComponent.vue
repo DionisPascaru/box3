@@ -7,24 +7,16 @@
             <h3>подписывайся на наши соц сеть</h3>
             <div class="subscribe-media-items">
               <div class="subscribe-media-item">
-                <a href="#">
-                  <img :src="require('@/assets/images/facebook.svg')">
-                </a>
+                <img :src="require('@/assets/images/facebook.svg')">
               </div>
               <div class="subscribe-media-item">
-                <a href="#">
-                  <img :src="require('@/assets/images/instagram.svg')">
-                </a>
+                <img :src="require('@/assets/images/instagram.svg')">
               </div>
               <div class="subscribe-media-item">
-                <a href="#">
-                  <img :src="require('@/assets/images/tik-tok.svg')">
-                </a>
+                <img :src="require('@/assets/images/tik-tok.svg')">
               </div>
               <div class="subscribe-media-item">
-                <a href="#">
-                  <img :src="require('@/assets/images/telegram.svg')">
-                </a>
+                <img :src="require('@/assets/images/telegram.svg')">
               </div>
             </div>
           </div>

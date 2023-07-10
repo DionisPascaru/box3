@@ -1,15 +1,5 @@
 .about {
-  h2 {
-    font-size: 40px;
-    color: $white-color;
-    text-align: center;
-  }
-
-  p {
-    font-size: 20px;
-    color: $white-color;
-    text-align: center;
-  }
+  background-color: $black-color;
 }
 
 .parallax-image-static {
@@ -47,12 +37,6 @@
 
   .work-schedule-activity {
     margin: 15px 0;
-
-    h3 {
-      color: $white-color;
-      font-size: 25px;
-      margin: 0;
-    }
 
     span {
       color: $white-color;
