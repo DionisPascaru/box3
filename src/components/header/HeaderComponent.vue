@@ -34,6 +34,13 @@
         </div>
       </div>
     </div>
+
+    <!-- mobile phone button -->
+    <div v-if="isMobile" class="mobile-phone">
+      <a href="tel:+373 79 793 793">
+        <img src="@/assets/images/call.svg">
+      </a>
+    </div>
   </div>
 </template>
 <script>

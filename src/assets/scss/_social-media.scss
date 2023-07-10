@@ -1,6 +1,11 @@
 .social-media-block {
   margin: auto;
   text-align: center;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   @include for-md {
     margin-left: auto;
@@ -8,21 +13,11 @@
   }
 
   h3 {
-    color: $white-color;
-    font-size: 30px;
-    margin: 20px 0;
+    margin: 20px;
+    font-size: 35px;
 
     @include for-md {
-      font-size: 80px;
-    }
-  }
-
-  h4 {
-    color: $white-color;
-    font-size: 20px;
-
-    @include for-md {
-      font-size: 50px;
+      font-size: 45px;
     }
   }
 
