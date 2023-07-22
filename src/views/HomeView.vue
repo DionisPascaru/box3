@@ -6,7 +6,7 @@
         <lottie :options="defaultOptions"></lottie>
       </div>
     </div>
-    <div class="home-view" v-if="!introAvailable">
+    <div class="home-view">
       <header-component></header-component>
       <banner-component></banner-component>
       <div class="blur-bg">
@@ -56,7 +56,7 @@ export default {
   mounted() {
     setTimeout(() => {
       this.introAvailable = false;
-    }, 2000);
+    }, 3000);
   }
 }
 </script>

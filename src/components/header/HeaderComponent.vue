@@ -70,21 +70,20 @@ export default {
     handleSelect(key) {
       this.activeIndex = key;
     },
-    goToSection(value, height = 0) {
+    goToSection(value) {
       if (this.isMobile) {
         this.collapseMenu();
       }
 
-      if (this.$route.name !== 'HomeView') {
-        this.$router.push('/');
-      } else {
-        const top = document.getElementById(value).offsetTop;
-        window.scrollTo({
-          top: (top + 700) - height,
-          left: 0,
-          behavior: 'smooth'
-        });
-      }
+      const element = document.getElementById(value);
+      const headerOffset = 45;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
     },
   }
 }
