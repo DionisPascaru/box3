@@ -1,5 +1,24 @@
 .about {
+  position: relative;
+  height: 350px;
   background-color: $black-color;
+
+  @include for-md {
+    height: 200px;
+  }
+
+  @include for-xxl {
+    height: 0;
+  }
+}
+
+.about-description {
+  position: absolute;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
 }
 
 .parallax-image-static {
@@ -31,9 +50,8 @@
 }
 
 .work-schedule {
-  max-width: 500px;
-  margin: auto;
   text-align: center;
+  background-color: $black-color;
 
   .work-schedule-activity {
     margin: 15px 0;

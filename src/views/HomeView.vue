@@ -10,7 +10,7 @@
       <header-component></header-component>
       <banner-component></banner-component>
       <div class="blur-bg">
-        <about-component id="aboutId"></about-component>
+        <work-schedule-component></work-schedule-component>
         <icons-component></icons-component>
         <services-component id="serviceId"></services-component>
         <announcement-component id="announcementId"></announcement-component>
@@ -24,7 +24,7 @@
 <script>
 import HeaderComponent from "@/components/header/HeaderComponent.vue";
 import BannerComponent from "@/components/main/BannerComponent.vue";
-import AboutComponent from "@/components/main/AboutComponent.vue";
+import WorkScheduleComponent from "@/components/main/WorkScheduleComponent.vue";
 import IconsComponent from "@/components/main/IconsComponent.vue";
 import ServicesComponent from "@/components/main/ServicesComponent.vue";
 import AnnouncementComponent from "@/components/main/AnnouncementComponent.vue";
@@ -39,7 +39,7 @@ export default {
   components: {
     HeaderComponent,
     BannerComponent,
-    AboutComponent,
+    WorkScheduleComponent,
     IconsComponent,
     ServicesComponent,
     AnnouncementComponent,
