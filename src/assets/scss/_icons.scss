@@ -15,17 +15,27 @@
   align-items: center;
   gap: 30px;
   flex-wrap: wrap;
+  max-width: 320px;
+  margin: auto;
+
+  @include for-md {
+    max-width: 420px;
+  }
 
   @include for-lg {
     flex-wrap: nowrap;
+    max-width: none;
   }
 
   .icon {
-    width: calc(20% - 30px);
+    width: 40px;
 
     @include for-md {
-      width: auto;
-      max-width: 100px;
+      width: 60px;
+    }
+
+    @include for-lg {
+      width: 100px;
     }
 
     img {

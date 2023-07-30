@@ -192,6 +192,11 @@ h2, h3, h4 {
     height: 500px;
   }
 }
+
+.position-relative {
+  position: relative;
+}
+
 /** ----- containers ----- **/
 .container {
   width: calc(100% - 30px);
@@ -219,6 +224,10 @@ h2, h3, h4 {
 
   @include for-xl {
     max-width: 1140px;
+  }
+
+  @include for-xxl {
+    max-width: 1400px;
   }
 }
 
